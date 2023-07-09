@@ -7,74 +7,98 @@
 
 @import url('https://fonts.googleapis.com/css2? familia= Lato:peso@400;700 & display=swap');
 * {
+    vertical-align: middle;
+    line-height: 1.2;
+    font-family:'lato',sans-serif;
+    font-size: 18px;
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
-    background-color: #fbfbfb;
     /* Para que el scrolleo en la one page sea suave */
     scroll-behavior: smooth;
-}
-header {
-    text-align: center;
-    line-height: 1.2;
-    display: flex;
-    justify-content: space-between;
-    padding: 16px;
-    height: 90px;
-    width: 100%;
-    background-color: #fbfbfb;
-    position: fixed;
-    top: 0;
-    left: 0;
-    box-shadow: 0 3px 10px -5px #5f5f5f;}
-
-figure {
-        display: block;
-        margin-block-start:1em;
-        margin-block-end: 1em;
-        margin-inline-start: 40px;
-        margin-inline-end: 40px;
-        }
-.presentacion-imagen img {
-            border-radius: 50%;
-            width: 400px;
-            max-width: 100%;}
-body {
-    font-family: 'lato',sans-serif;
-    font-size: 18px;
-    line-height: 1.2;
-    background-color: #fbfbfb;
-    color: #0f0f0f;
-    
-
-}
-main{
-    background-color: #fbfbfb;
-    background-clip: #af599e;
     max-width: 1200px;
-    margin: auto;}
+    margin: auto;
+    text-align:center
+  }
 
+    header {
+        display:flex;
+        justify-content:stretch;
+        padding: 30px;
+        height: 90px;
+        max-width: 100%;
+        width: 1200px;
+        background-color: #fbfbfb;
+        min-height: 100vb;
+        color: #0f0f0f;}
+                
+#inicio figure img {
+    
+        overflow: content-box;
+        overflow: clip;
+        height: 500px;
+        width: 400px;
+        border-radius: 100%;}       
+h1{
+        font-size: 36px;
+        }
+#contacto p{
+        background-color: hsl(312, 50%, 80%);
+        border-radius: 5%;
+        padding-bottom: 20px;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 10px;
+        margin-inline-end: 10px;
 
-a.boton {
-        background-color: #af599e;
-        color: #fbfbfb;
-        padding: 12px 20px;
-        border-radius: 50px;
-        font-size: 20px;
-        display: inline-block;
-    }
-/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
-*  cuyos valores asigna por defecto el navegador.
-*/
-
-/* Reset */
-
-/* Para quitar los puntos a los items de listas */
-ul {
-    list-style: none;
 }
+#contacto ul {
+        display:list-item;
+        justify-content: space-between;
+        align-items: center;
+        height: 90px;
+        background: #fbfbfb;
+        width: 100%;
+        padding: 70px;}
 
-/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+#contacto img {
+    height: 90px;
+    width: 90px
+}
+h2{
+        font-size: 28px;
+        padding: 20px;
+}
+p{
+        min-height: 100vb;
+        text-align:center;
+        border-bottom: 20px;
+        border-top: 20px;
+        padding-bottom: 20px
+}
+#inicio{
+    padding-bottom: 20px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+section {
+    min-height: 100vh;
+    padding-top: 130px;
+    padding-bottom: 20px;}
+a.boton {
+    background-color: #af599e;
+    color: #fbfbfb;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    display: inline-block;
+}
+ ul {
+    list-style: none;
+} 
 a {
     text-decoration: none;
     color: inherit;
@@ -83,13 +107,18 @@ a {
 /* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
 *  el margin: auto; para tenerlo centrado fácilmente ;)
 */
-footer {
-   
+footer { 
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #af599e;
-    color: #fbfbfb;}
+    color: #fbfbfb;
+    height: 90px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 /* Recomendaciones! 
 *  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
 *    "estilos generales". Una buena idea sería comenzar por el <body> ;)
