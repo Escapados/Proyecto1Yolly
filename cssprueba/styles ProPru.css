@@ -7,7 +7,7 @@
 
 @import url('https://fonts.googleapis.com/css2? familia= Lato:peso@400;700 & display=swap');
 * {
-    vertical-align: middle;
+    vertical-align:middle;
     line-height: 1.2;
     font-family:'lato',sans-serif;
     font-size: 18px;
@@ -22,15 +22,18 @@
 
     header {
         display:flex;
-        justify-content:stretch;
-        padding: 30px;
-        height: 90px;
-        max-width: 100%;
-        width: 1200px;
-        background-color: #fbfbfb;
+        flex-direction: row;
+        justify-content:space-around;
+        width: 100%;
+    }
+.presentacion{
+        padding-bottom: 20px;
         min-height: 100vb;
-        color: #0f0f0f;}
-                
+        text-align:center;
+        border-bottom: 20px;
+        border-top: 20px;
+
+}                
 #inicio figure img {
     
         overflow: content-box;
@@ -43,17 +46,18 @@ h1{
         }
 #contacto p{
         background-color: hsl(312, 50%, 80%);
-        border-radius: 5%;
+        border-radius: 0%;
         padding-bottom: 20px;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 10px;
-        margin-inline-end: 10px;
+        min-height: 100vb;
+        text-align:center;
+        border-bottom: 20px;
+        border-top: 20px;
+    }
 
-}
 #contacto ul {
-        display:list-item;
-        justify-content: space-between;
+        display:flex;
+        flex-direction: row;
+        justify-content:space-around;
         align-items: center;
         height: 90px;
         background: #fbfbfb;
@@ -67,25 +71,11 @@ h1{
 h2{
         font-size: 28px;
         padding: 20px;
+        background-color: hsl(312, 50%, 80%);
 }
-p{
-        min-height: 100vb;
-        text-align:center;
-        border-bottom: 20px;
-        border-top: 20px;
-        padding-bottom: 20px
-}
-#inicio{
-    padding-bottom: 20px;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
 
-}
 section {
-    min-height: 100vh;
+    height: 0%;
     padding-top: 130px;
     padding-bottom: 20px;}
 a.boton {
@@ -114,11 +104,7 @@ footer {
     background-color: #af599e;
     color: #fbfbfb;
     height: 90px;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
+    }
 /* Recomendaciones! 
 *  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
 *    "estilos generales". Una buena idea sería comenzar por el <body> ;)
